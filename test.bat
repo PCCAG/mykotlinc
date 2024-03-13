@@ -18,7 +18,7 @@ python mykotlinc.py test.kt clear
 
 "./mykotlinc" test.kt clear
 
-python mykotlinc.py D:\学校作业及其他\考研\mykotlinc\test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache
+python mykotlinc.py D:\学校作业及其他\考研\mykotlinc\test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache --max-workers 6
 
 python mykotlinc.py D:\学校作业及其他\考研\mykotlinc\test.kt
 
