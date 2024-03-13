@@ -189,14 +189,19 @@ if __name__ == "__main__":
 
     file_path = arguments[0]
 
-    toclear = arguments[1]
-    if toclear.strip() == "clear":
+    params = ""
 
-        toclear = True
-    else:
-        toclear = False
+    toclear = False
 
-    params = " ".join(arguments[2:])
+    if len(arguments) > 2:
+
+        toclear = arguments[1]
+        if toclear.strip() == "clear":
+            toclear = True
+            params = " ".join(arguments[2:])
+        else:
+            toclear = False
+            params = " ".join(arguments[1:])
 
     if os.path.exists(file_path):
         mycompilter(

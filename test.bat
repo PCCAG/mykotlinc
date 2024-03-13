@@ -7,3 +7,13 @@
 @REM "./mykotlinc" test.kt
 
 python mykotlinc.py test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache
+
+python mykotlinc.py test.kt
+
+python mykotlinc.py test.kt clear
+
+"./mykotlinc" test.kt
+
+"./mykotlinc" test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache
+
+"./mykotlinc" test.kt clear
