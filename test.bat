@@ -1,5 +1,5 @@
 @REM @echo off
-@REM chcp 65001
+chcp 65001
 @REM python mykotlinc.py test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache --max-workers 6
 
 @REM pyinstaller --onefile mykotlinc.py
@@ -17,3 +17,9 @@ python mykotlinc.py test.kt clear
 "./mykotlinc" test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache
 
 "./mykotlinc" test.kt clear
+
+python mykotlinc.py D:\学校作业及其他\考研\mykotlinc\test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache
+
+python mykotlinc.py D:\学校作业及其他\考研\mykotlinc\test.kt
+
+python mykotlinc.py D:\学校作业及其他\考研\mykotlinc\test.kt clear
