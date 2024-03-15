@@ -6,17 +6,17 @@ chcp 65001
 
 @REM "./mykotlinc" test.kt
 
-@REM python mykotlinc.py test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache
+python mykotlinc.py test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache
 
-@REM python mykotlinc.py test.kt
+python mykotlinc.py test.kt
 
-@REM python mykotlinc.py test.kt clear
+python mykotlinc.py test.kt clear
 
-@REM "./mykotlinc" test.kt
+"./mykotlinc" test.kt
 
-@REM "./mykotlinc" test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache
+"./mykotlinc" test.kt -w --no-rebuild --configuration-cache --parallel --daemon --build-cache
 
-@REM "./mykotlinc" test.kt clear
+"./mykotlinc" test.kt clear
 
 python D:\学校作业及其他\考研\mykotlinc\mykotlincoutside.py D:\学校作业及其他\考研\mykotlinc\test.kt clear -w --no-rebuild --configuration-cache --parallel --daemon --build-cache --max-workers 6
 
