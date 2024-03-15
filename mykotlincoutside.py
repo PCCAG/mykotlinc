@@ -7,10 +7,9 @@ from shutil import rmtree
 from cherk_file_modifyoutside import update_hash, template_file_is_modify
 
 
-# Get the directory of the current script
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Change the working directory
+
 os.chdir(script_dir)
 
 # 目录结构
