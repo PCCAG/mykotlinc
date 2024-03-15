@@ -4,14 +4,14 @@ import sys
 from shutil import rmtree
 
 # from httpx import delete
-from cherk_file_modify import update_hash, template_file_is_modify
+from cherk_file_modifyoutside import update_hash, template_file_is_modify
 
 
 # Get the directory of the current script
-# script_dir = os.path.dirname(os.path.abspath(__file__))
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# # Change the working directory
-# os.chdir(script_dir)
+# Change the working directory
+os.chdir(script_dir)
 
 # 目录结构
 """
@@ -119,10 +119,11 @@ def make_most_simple_gradle_kotlin_project(current_path: str = os.getcwd()):
                     )
             # print(os.path.join(current_path, k))
         # print("创建成功")
-    except Exception:
+    except Exception as e:
 
         print("发生未知错误!")
-        sys.exit()
+        raise e
+        # sys.exit()
 
         # print("创建失败!")
 
@@ -150,6 +151,7 @@ def mycompilter(
 
     def delete_build(project_path=project_path):
         if project_path != os.getcwd():
+            print(project_path)
             rmtree(project_path)
             print("删除已经构建")
 
